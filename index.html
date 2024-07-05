@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Frontend App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Sample Frontend App</h1>
+  <p>This is a very basic frontend application.</p>
+  <button id="clickMe">Click Me!</button>
+  <p id="message"></p>
+  
+  <script>
+    document.getElementById('clickMe').addEventListener('click', function() {
+      document.getElementById('message').innerText = 'Button Clicked!';
+    });
+  </script>
+</body>
+</html>
