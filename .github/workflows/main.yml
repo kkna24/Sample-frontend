@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: self-hosted  # Assuming you have a self-hosted runner with Amazon Linux 2023 installed
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
