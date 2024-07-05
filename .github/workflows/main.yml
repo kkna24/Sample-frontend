@@ -22,11 +22,4 @@ jobs:
         source: "index.html"
         target: "/var/www/sample-frontend"
 
-    - name: Restart sample-frontend service
-      uses: appleboy/ssh-action@v0.1.3
-      with:
-        host: ${{ secrets.EC2_HOST }}
-        username: ec2-user
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        script: |
-          sudo systemctl restart sample-frontend
+  
